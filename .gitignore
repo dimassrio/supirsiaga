@@ -1,5 +1,9 @@
 /bootstrap/compiled.php
 /vendor
+/assets
+/public/assets
+.sass-cache
+/node_modules
 composer.phar
 composer.lock
 .env.*.php
