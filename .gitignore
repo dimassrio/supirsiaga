@@ -1,7 +1,7 @@
 /bootstrap/compiled.php
 /vendor
 /assets/vendor
-/public/assets
+/public/assets/vendor
 .sass-cache
 /node_modules
 composer.phar
