@@ -105,4 +105,7 @@ class SystemController extends \BaseController {
 		}
 	}
 
+	public function bookingSingle($id){
+		return View::make('booking.single');
+	}
 }

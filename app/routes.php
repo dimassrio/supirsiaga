@@ -19,3 +19,4 @@ Route::post('login', 'UsersController@saveLogin');
 Route::post('search', 'SystemController@search');
 Route::get('api/CarRentalDetail/{id}', 'CarRentalDetailsController@apiCarRentalDetails');
 Route::get('api/TaxiDetail/{id}', 'TaxiDetailsController@apiTaxiDetails');
+Route::get('book/{type}/single/{id}', 'SystemController@bookingSingle');
