@@ -12,3 +12,10 @@
 */
 
 Route::get('/', 'SystemController@index');
+Route::get('register', 'UsersController@register');
+Route::post('register', 'UsersController@saveRegister');
+Route::get('login', 'UsersController@login');
+Route::post('login', 'UsersController@saveLogin');
+Route::post('search', 'SystemController@search');
+Route::get('api/CarRentalDetail/{id}', 'CarRentalDetailsController@apiCarRentalDetails');
+Route::get('api/TaxiDetail/{id}', 'TaxiDetailsController@apiTaxiDetails');

@@ -9,7 +9,7 @@
 
 		<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 		<link rel="stylesheet" href="{{asset('assets/vendor/foundation-icon-fonts/foundation-icons.css')}}">
-		<link rel="stylesheet" href="{{asset('assets/vendor/onepage-scroll/onepage-scroll.css')}}">
+		
 		<!-- <link rel="stylesheet" href="{{asset('assets/style-font.css')}}"> -->
 		<link rel="stylesheet" href="{{asset('assets/style.min.css')}}">
 		

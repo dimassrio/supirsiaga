@@ -1,0 +1,1 @@
+E:\Development\php\supirsiaga\app/views/pricings/edit.blade.php

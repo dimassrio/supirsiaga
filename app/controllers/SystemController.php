@@ -83,4 +83,26 @@ class SystemController extends \BaseController {
 		//
 	}
 
+	public function search(){
+		$data['from'] = City::find(Input::get('from'));
+		$data['destination'] = City::find(Input::get('destination'));
+		if(Input::get('from') == Input::get('destination')){
+			$schedule = Schedule::where('from', Input::get('from'))->where('destination', Input::get('from'))->get();
+			$listing = array();
+			foreach ($schedule as $schedule_detail) {
+				$type = VehicleType::find($schedule_detail->type);
+				$list = null;
+				if($type->model == 'CarRental'){
+					$list = CarRental::where('city_id', Input::get('from'))->get();
+				}else if($type->model == 'Taxi'){
+					$list = Taxi::where('city_id', Input::get('from'))->get();
+				}
+				array_push($listing, $list);
+			}
+			$content['listing'] = $listing;
+			$content['city'] = $data['from'];
+			return View::make('search.search', $data)->nest('search_view','search.search-internal', $content);
+		}
+	}
+
 }

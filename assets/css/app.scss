@@ -3,7 +3,37 @@
 	position:relative;
 	margin:35% auto;
 }
-.onepage-wrapper section{
-	width:100%;
-	height:100%;
+.onepage-wrapper section img.background{
+	position: absolute;
+	max-width:100%;
+	right:0;
+}
+#index-first-section{
+	background:#E7E2C9 url('images/index-first-section.png') no-repeat;
+}
+#index-second-section{
+	background:#b3d1ff url('images/index-second-section.png') no-repeat right bottom;
+	h2{
+		color:#FFFFFF;
+	}
+}
+#index-third-section{
+	background:#FFA34F;
+}
+.sections, .row.sections{
+	margin-top:50px;
+}
+.section-content{
+	position: relative;
+	margin:10% auto;
+}
+#footer{
+	background:#FF9115;
+	color:#FFFFFF;
+}
+#first-section{
+	background-color: rgba(255, 255, 255, 0.6);
+}
+#second-section{
+	background-color: rgba(255, 255, 255, 0.6);
 }

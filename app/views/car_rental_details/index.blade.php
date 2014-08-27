@@ -1,0 +1,1 @@
+E:\Development\php\supirsiaga\app/views/car_rental_details/index.blade.php
